@@ -1,0 +1,17 @@
+{
+    "version": "0.2",
+    "language": "en",
+    "words": [
+      "mkdocs",
+      "msql",
+      "JDBC"
+    ],
+    "ignoreWords": [
+      "struct",
+      "puml",
+      "devicons",
+      "plantuml",
+      "startuml",
+      "enduml"
+    ]
+}
