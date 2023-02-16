@@ -21,10 +21,21 @@ nix develop
 mkdocs serve
 ```
 
+You can also build a PDF version of the docs:
+
+```sh
+# without local checkout
+nix build github:tfc/mkdocs-plantuml-c4#pdf
+
+# local checkout
+nix build .#pdf
+```
+
 ## Packaged Tools/Plugins
 
 - [mkdocs](https://www.mkdocs.org/)
 - [mkdocs-material](https://squidfunk.github.io/mkdocs-material/)
+- [mkdocs-with-pdf](https://github.com/orzih/mkdocs-with-pdf)
 - [plantuml](https://plantuml.com/)
 - [plantuml-markdown](https://github.com/mikitex70/plantuml-markdown)
 - [C4-plantuml](https://github.com/plantuml-stdlib/C4-PlantUML)
