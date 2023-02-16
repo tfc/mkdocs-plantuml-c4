@@ -9,6 +9,7 @@ stdenv.mkDerivation {
 
   src = lib.sourceByRegex ./. [
     "^docs.*"
+    "^templates.*"
     "mkdocs.yml"
   ];
 
@@ -16,6 +17,7 @@ stdenv.mkDerivation {
     python3
     python3Packages.mkdocs
     python3Packages.mkdocs-material
+    python3Packages.mkdocs-with-pdf
     python3Packages.plantuml-markdown
   ];
 

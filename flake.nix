@@ -18,6 +18,7 @@
         let
           python3Packages = (pkgs.python3.override {
             packageOverrides = pFinal: pPrev: {
+              mkdocs-with-pdf = pFinal.callPackage ./mkdocs-with-pdf.nix { };
               plantuml-markdown = pPrev.plantuml-markdown.override {
                 plantuml = pkgs.plantuml-c4;
               };
@@ -28,6 +29,14 @@
           packages = {
             default = config.packages.html;
             html = pkgs.callPackage ./build.nix { inherit python3Packages; };
+            pdf = config.packages.html.overrideAttrs (old: {
+              name = "sensorstack-documentation.pdf";
+              ENABLE_PDF_EXPORT = 1;
+              buildPhase = ''
+                mkdocs build
+                cp site/documentation.pdf $out
+              '';
+            });
           };
 
           apps = {

@@ -24,3 +24,11 @@ theme:
 
 plugins:
     - search
+    - with-pdf:
+        cover: true
+        back_cover: true
+        cover_title: Example Project
+        cover_subtitle: Project Documentation
+        custom_template_path: templates
+        output_path: documentation.pdf
+        enabled_if_env: ENABLE_PDF_EXPORT
