@@ -30,6 +30,17 @@ theme:
     - search.suggest
     - toc.follow
     - toc.integrate
+  palette:
+    - scheme: default
+      primary: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
 extra:
   homepage: https://tfc.github.com/mkdocs-plantuml-c4
