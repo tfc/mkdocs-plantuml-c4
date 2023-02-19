@@ -21,14 +21,21 @@ theme:
   name: material
   icon:
     repo: fontawesome/brands/github
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+
+extra:
+  homepage: https://tfc.github.com/mkdocs-plantuml-c4
+
+repo_url: https://github.com/tfc/mkdocs-plantuml-c4
+repo_name: tfc/mkdocs-plantuml-c4
 
 plugins:
-    - search
-    - with-pdf:
-        cover: true
-        back_cover: true
-        cover_title: Example Project
-        cover_subtitle: Project Documentation
-        custom_template_path: templates
-        output_path: documentation.pdf
-        enabled_if_env: ENABLE_PDF_EXPORT
+  - search
