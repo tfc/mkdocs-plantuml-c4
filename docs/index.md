@@ -1,6 +1,14 @@
 # Example Project Documentation
 
-The chosen documentation system is [mkdocs.org](https://www.mkdocs.org).
+The chosen documentation system is based on:
+
+- [mkdocs](https://www.mkdocs.org/)
+- [mkdocs-material](https://squidfunk.github.io/mkdocs-material/)
+- [mkdocs-with-pdf](https://github.com/orzih/mkdocs-with-pdf)
+- [plantuml](https://plantuml.com/)
+- [plantuml-markdown](https://github.com/mikitex70/plantuml-markdown)
+- [C4-plantuml](https://github.com/plantuml-stdlib/C4-PlantUML)
+- [plantuml-icon-font-sprites](https://github.com//tupadr3/plantuml-icon-font-sprites)
 
 ## Architecture
 
