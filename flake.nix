@@ -28,7 +28,7 @@
         {
           packages = {
             default = config.packages.html;
-            html = pkgs.callPackage ./build.nix { inherit python3Packages; };
+            html = python3Packages.callPackage ./build.nix { };
             pdf = config.packages.html.overrideAttrs (old: {
               name = "sensorstack-documentation.pdf";
               ENABLE_PDF_EXPORT = 1;
